@@ -48,3 +48,10 @@ jobs:
     - name: Check containers
       run: |
            docker ps 
+    - name: test backend
+      run: |
+           curl http://localhost:8081
+    - name: test frontend
+      run: |
+           curl http://localhost:4200
+           
